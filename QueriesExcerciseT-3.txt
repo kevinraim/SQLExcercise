@@ -1,0 +1,11 @@
+SELECT p.nombre, p.apellido, p.fecha_nacimiento FROM PROFESOR p ORDER BY p.fecha_nacimiento ASC;
+
+SELECT * FROM PROFESOR p WHERE p.salario >= 65000;
+
+SELECT * FROM PROFESOR p WHERE p.fecha_nacimiento >= DATE("1980-01-01") AND p.fecha_nacimiento <= DATE("1989-12-31");
+
+SELECT * FROM PROFESOR LIMIT 5;
+
+SELECT * FROM PROFESOR p WHERE p.apellido LIKE "P%";
+
+SELECT * FROM PROFESOR p WHERE p.fecha_nacimiento >= DATe("1980-01-01") AND p.fecha_nacimiento <= DATE("1989-12-31") AND p.salario >= 80000;
